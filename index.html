@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="./style-pantallaElegirnos.css">
+        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="nav.scss">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script defer src="./main.js"></script>
+
+    </head>
+    <header>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-dark  bg-dark border-3 border-bottom border-secondary"  >
+            <div class ="container-fluid">
+      
+              <a href ="#" class ="navbar-brand m-lg-3" > <img src="img/logoNav.png" width="70%" ></a>
+              <button type ="button" class ="navbar-toggler" data-bs-toggle="collapse" data-bs-target ="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id ="MenuNavegacion" class ="collapse navbar-collapse p-md-5 mx-md-5 justify-content-end  ">
+                  <ul class ="navbar-nav">
+                    <li class = "nav-item ms-sm-4"><a class="nav-link" href="#">INICIO</a></li>
+                    <li class = "nav-item ms-sm-4"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
+                    <li class="nav-item dropdown ms-sm-4">
+                        <a class="nav-link dropdown-toggle" href="#" id="NavegacionDropMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          DESTINOS
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="NavegacionDropMenu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class="nav-item  dropdown ms-sm-4 ">
+                        <a class="nav-link dropdown-toggle" href="#" id="NavegacionDropMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PAQUETES
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="NavegacionDropMenu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                      <li class = "nav-item ms-sm-3"><a class="nav-link" href="#">CONTACTO</a></li>
+                    
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          
+      
+        </div>
+      
+      </header> 
+      <body>
+        <div class="r">
+            <div id="carousel-paisajes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="img/paisaje-1.jpg" class="d-block w-100 paisaje" alt="paisaje 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/paisaje-2.jpg" class="d-block w-100 paisaje" alt="paisaje 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/paisaje-3.jpg" class="d-block w-100 paisaje" alt="paisaje 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-paisajes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-paisajes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="body">
+            
+            <div class="flex-conteiner-elegirnos">
+                <div class="titulo">
+                    <h1>¿POR QUÉ ELEGIRNOS?</h1>
+                <div class="texto1">
+                    <p>En Adventure time te brindamos toda la información y el asesoramiento necesario para que puedas 
+                        disfrutar al máximo tu viaje. Te ofrecemos una gama de distintos servicios de hotelería, vuelos, 
+                        lugares turísticos y te guiamos en el proceso de elección y reserva de cada uno.</p>
+                    </div>
+                </div>
+
+            <div class="hijo">
+                <img src="./recursos/cama.png"/>
+                <p>ALOJAMIENTO</p>
+                <p class="texto-hijo">Nos relacionamos con distintas cadenas hoteleras y cabañas con grandes comodidades y una ubicación cercana a 
+                    lugares turísticos de cada ciudad.</p>
+                </div>
+
+            <div class="hijo">
+                <img src="./recursos/coche.png"/>
+                <p>TRASLADO</p>
+                <p class="texto-hijo">Desde y hacia el aeropuerto</p>
+            </div>
+
+            <div class="hijo">
+                <img src="./recursos/senderismo.png"/>
+                <p>ACTIVIDADES</p>
+                <p class="texto-hijo">Ofrecemos un cronograma tanto diurno como nocturno.</p>
+                
+            </div>
+
+            <div class="hijo">
+                <img src="./recursos/buscar-alt.png"/>
+                <p>DOCUMENTACIÓN</p>
+                <p class="texto-hijo">Realizamos todos los trámites correspondientes con mayor eficiencia y rapidez.</p>
+
+                
+            </div>
+
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        </div>
+    </body>
+    
+    <footer>
+        <div>
+            <h1> AQUI VA EL FOOTER</h1>
+        </div>
+        
+       
+        
+
+    </footer>
+
+    
+</html>
