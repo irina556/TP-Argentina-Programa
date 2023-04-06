@@ -60,90 +60,46 @@
       
     </header> 
       <body>
-
-
-        <div class="container-fluid">
-            <div id="carousel-paisajes" class="carousel slide" data-bs-ride="carousel">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    
-                <div class="carousel-inner" style="height: 900px;">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="img/paisaje-1.jpg" class="d-block w-100 paisaje" alt="paisaje 1">
-                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                            <p class="mt-md-4 fs-3 text-uppercase">Aventurate por el mundo</p>
-                            <h1 class="display-1 fw-bolder text-capitalize">Adventure Time</h1>
-                            <a href="formularioUser.html" class="btn btn-primary px-4 py-2 fs-5 mt-5" role="button"> UNETE AHORA </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="img/paisaje-2.jpg" class="d-block w-100 paisaje" alt="paisaje 2">
-                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                            <p class="mt-md-4 fs-3 text-uppercase">Aventurate por el mundo</p>
-                            <h1 class="display-1 fw-bolder text-capitalize">Adventure Time</h1>
-                            <a href="formularioUser.html" class="btn btn-primary px-4 py-2 fs-5 mt-5" role="button"> UNETE AHORA </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="img/paisaje-3.jpg" class="d-block w-100 paisaje" alt="paisaje 3">
-                        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                            <p class="mt-md-4 fs-3 text-uppercase">Aventurate por el mundo</p>
-                            <h1 class="display-1 fw-bolder text-capitalize">Adventure Time</h1>
-                            <a href="formularioUser.html" class="btn btn-primary px-4 py-2 fs-5 mt-5" role="button"> UNETE AHORA </a>
-                        </div>
-                    </div>
+        <div class="container">
+            <form class="row g-3 m-md-5">
+                <div class="col-md-4 p-md-5">
+                  <label for="validationDefault01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="...." required>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-paisajes" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-paisajes" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                <div class="col-md-4 p-md-5">
+                  <label for="validationDefault02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="...." required>
+                </div>
+                <div class="col-md-4 p-md-5">
+                    <label for="validationDefault02" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="validationDefault06" value="...." required>
+                  </div>
+                <div class="col-md-5 p-md-4">
+                  <label for="validationDefault03" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-3 p-md-4">
+                  <label for="validationDefault04" class="form-label">Provincia</label>
+                  <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-3 p-md-4">
+                  <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                  <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                
+                <div class="col-12 p-md-5">
+                  <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
+                </div>
+              </form>
         </div>
 
-        <div class="body-md">
-            
-            <div class="flex-conteiner-elegirnos">
-                <div class="titulo">
-                    <h1>¿POR QUÉ ELEGIRNOS?</h1>
-                <div class="texto1">
-                    <p>En Adventure Time te brindamos toda la información y el asesoramiento necesario para que puedas 
-                        disfrutar al máximo tu viaje. Te ofrecemos una gama de distintos servicios de hotelería, vuelos, 
-                        lugares turísticos y te guiamos en el proceso de elección y reserva de cada uno.</p>
-                    </div>
-                </div>
 
-            <div class="hijo">
-                <img src="./recursos/cama.png"/>
-                <p>ALOJAMIENTO</p>
-                <p class="texto-hijo">Nos relacionamos con distintas cadenas hoteleras y cabañas con grandes comodidades y una ubicación cercana a 
-                    lugares turísticos de cada ciudad.</p>
-                </div>
+        
 
-            <div class="hijo">
-                <img src="./recursos/coche.png"/>
-                <p>TRASLADO</p>
-                <p class="texto-hijo">Desde y hacia el aeropuerto</p>
-            </div>
-
-            <div class="hijo">
-                <img src="./recursos/senderismo.png"/>
-                <p>ACTIVIDADES</p>
-                <p class="texto-hijo">Ofrecemos un cronograma tanto diurno como nocturno.</p>
-                
-            </div>
-
-            <div class="hijo">
-                <img src="./recursos/buscar-alt.png"/>
-                <p>DOCUMENTACIÓN</p>
-                <p class="texto-hijo">Realizamos todos los trámites correspondientes con mayor eficiencia y rapidez.</p>
-
-                
-            </div>
-
-            </div>
+        
            
             
             <script src="https://kit.fontawesome.com/4411795cee.js" crossorigin="anonymous"></script>
