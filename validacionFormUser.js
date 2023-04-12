@@ -85,6 +85,8 @@ function subir(event){
         return;
     }
     else{
-        alert("Los datos se han cargado correctamente")
+        Swal.fire({
+            icon:"success",
+            text:"Los datos se han cargado correctamente"})
     }
 }
