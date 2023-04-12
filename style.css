@@ -9,3 +9,15 @@
 .contactanos{
   font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
 }
+
+#NuestroPersonal{
+  text-align: center;
+}
+
+
+.card{
+  transition:all 0.3s;
+}
+.card:hover{
+  transform:scale(1.15);
+}
