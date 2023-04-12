@@ -2,3 +2,10 @@
   width: 100%;
   height: 800px;
 }/*# sourceMappingURL=style.css.map */
+
+.error{
+  color:darkred; 
+}
+.contactanos{
+  font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
