@@ -11,6 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <script defer src="./main.js"></script>
+        <script defer src="./validacionFormUser.js"></script>
 
 
     </head>
@@ -58,47 +59,47 @@
       
         </div>
       
-    </header> 
+ </header> 
       <body>
         <div class="container bg-secondary py-5">
-            <form class="text-white" id="formulario-registro">
+            <form class="text-white" id="formulario-registro" onsubmit="subir(event)">
               <div class="row text-center">
                 <div class="col-md">
-                  <label for="formulario-registro" class="form-label">Formulario</label>
+                  <label for="formulario-registro" class="form-label"><h2 class="contactanos">Contáctanos</h2></label>
                 </div>
               </div>
               
               <div class="row py-3 ps-5">
                 <div class="col-md-4">
-                  <label for="validationDefault01" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="validationDefault01" value="...." required>
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" name="nombre"id="nombre">
                 </div>
                 <div class="col-md-4">
-                  <label for="validationDefault02" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="validationDefault02" value="...." required>
-                </div>
-              </div>
-              <div class="row py-3 ps-5">
-                <div class="col-md-4">
-                  <label for="validationDefault02" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="validationDefault06" value="...." required>
-                </div>
-                <div class="col-md-4">
-                  <label for="validationDefault03" class="form-label">Localidad</label>
-                  <input type="text" class="form-control" id="validationDefault03" required>
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" name="apellido" id="apellido">
                 </div>
               </div>
               <div class="row py-3 ps-5">
                 <div class="col-md-4">
-                  <label for="validationDefault04" class="form-label">Provincia</label>
-                  <select class="form-select" id="validationDefault04" required>
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" name="email" id="email">
+                </div>
+                <div class="col-md-4">
+                  <label for="localidad" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" name="localidad" id="localidad">
+                </div>
+              </div>
+              <div class="row py-3 ps-5">
+                <div class="col-md-4">
+                  <label for="provincia" class="form-label">Provincia</label>
+                  <select class="form-select" name="provincia"id="provincia">
                     <option selected disabled value="">Elegir...</option>
                     <option>...</option>
                   </select>
                 </div>
                 <div class="col-md-2">
-                  <label for="validationDefault05" class="form-label">Codigo Postal</label>
-                  <input type="text" class="form-control" id="validationDefault05" required>
+                  <label for="codigoPostal" class="form-label">Codigo Postal</label>
+                  <input type="text" class="form-control" name="codigoPostal"id="codigoPostal">
                 </div>
               </div>
               
@@ -150,6 +151,9 @@
 
         </footer>
         
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     </body>
 
