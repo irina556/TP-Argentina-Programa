@@ -15,7 +15,7 @@
 
     </head>
 
-    <header class="position-sticky z-3 top-0">
+    <header class="position-static z-3 top-0">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-md navbar-dark  bg-dark border-3 border-bottom border-secondary">
             <div class ="container-fluid">
@@ -60,40 +60,53 @@
       
     </header> 
       <body>
-        <div class="container">
-            <form class="row g-3 m-md-5">
-                <div class="col-md-4 p-md-5">
+        <div class="container bg-secondary py-5">
+            <form class="text-white" id="formulario-registro">
+              <div class="row text-center">
+                <div class="col-md">
+                  <label for="formulario-registro" class="form-label">Formulario</label>
+                </div>
+              </div>
+              
+              <div class="row py-3 ps-5">
+                <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="validationDefault01" value="...." required>
                 </div>
-                <div class="col-md-4 p-md-5">
+                <div class="col-md-4">
                   <label for="validationDefault02" class="form-label">Apellido</label>
                   <input type="text" class="form-control" id="validationDefault02" value="...." required>
                 </div>
-                <div class="col-md-4 p-md-5">
-                    <label for="validationDefault02" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="validationDefault06" value="...." required>
-                  </div>
-                <div class="col-md-5 p-md-4">
+              </div>
+              <div class="row py-3 ps-5">
+                <div class="col-md-4">
+                  <label for="validationDefault02" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="validationDefault06" value="...." required>
+                </div>
+                <div class="col-md-4">
                   <label for="validationDefault03" class="form-label">Localidad</label>
                   <input type="text" class="form-control" id="validationDefault03" required>
                 </div>
-                <div class="col-md-3 p-md-4">
+              </div>
+              <div class="row py-3 ps-5">
+                <div class="col-md-4">
                   <label for="validationDefault04" class="form-label">Provincia</label>
                   <select class="form-select" id="validationDefault04" required>
                     <option selected disabled value="">Elegir...</option>
                     <option>...</option>
                   </select>
                 </div>
-                <div class="col-md-3 p-md-4">
+                <div class="col-md-2">
                   <label for="validationDefault05" class="form-label">Codigo Postal</label>
                   <input type="text" class="form-control" id="validationDefault05" required>
                 </div>
-                
-                <div class="col-12 p-md-5">
+              </div>
+              
+              <div class="row p-5">
+                <div class="col-12 d-flex justify-content-end">
                   <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
                 </div>
-              </form>
+              </div>
         </div>
 
 
