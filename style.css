@@ -16,3 +16,19 @@
 .nav-pagina-principal{
   height: 60px;
 }
+
+.red-socialP a{
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 45px;
+  line-height: 40px;
+  color: #0d2033;
+  background-color: #fff;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.red-socialP a:hover {
+  color: aqua;
+}
