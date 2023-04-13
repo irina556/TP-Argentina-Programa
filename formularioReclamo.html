@@ -38,8 +38,6 @@
             
                       </li>
                       <li class = "nav-item ms-sm-4"><a class="nav-link" href="formularioReclamo.html">RECLAMO</a></li>
-                      
-                      </li>
 
                       <li class = "nav-item ms-sm-3"><a class="nav-link" href="#">CONTACTO</a></li>
                     
@@ -57,7 +55,7 @@
             <form class="text-white" id="formulario-registro" onsubmit="subir(event)">
               <div class="row text-center">
                 <div class="col-md">
-                  <label for="formulario-registro" class="form-label"><h2 class="contactanos">Contáctanos</h2></label>
+                  <label for="formulario-registro" class="form-label"><h2 class="contactanos">RECLAMO</h2></label>
                 </div>
               </div>
               
@@ -76,42 +74,23 @@
                   <label for="email" class="form-label">Email</label>
                   <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese un email">
                 </div>
-                <div class="col-md-4">
-                  <label for="localidad" class="form-label">Localidad</label>
-                  <input type="text" class="form-control" name="localidad" id="localidad" placeholder="Ingrese una localidad">
-                </div>
               </div>
               <div class="row py-3 ps-5">
                 <div class="col-md-4">
-                  <label for="provincia" class="form-label">Provincia</label>
+                  <label for="provincia" class="form-label">Motivo de reclamo</label>
                   <select class="form-select" name="provincia"id="provincia">
                     <option selected disabled value="">Elegir...</option>
-                    <option>Buenos Aires</option>
-                    <option>Cordoba</option>
-                    <option>Santa Fe</option>
-                    <option>Mendoza</option>
-                    <option>Chaco</option>
-                    <option>Catamarca</option>
-                    <option>Corrientes</option>
-                    <option>Formosa</option>
-                    <option>Misiones</option>
-                    <option>Neuquén</option>
-                    <option>La Rioja</option>
-                    <option>Rio Negro</option>
-                    <option>Santiago del Estero</option>
-                    <option>Santa Cruz</option>
-                    <option>Tierra del Fuego</option>
-                    <option>Tucuman</option>
-                    <option>Salta</option>
-                    <option>Jujuy</option>
-                    <option>Formosa</option>
-                    <option>La Pampa</option>
-                    <option>San Luis</option>
-                    <option>San Juan</option>
-                    <option>Chubut</option>
-                    <option>Entre Ríos</option>
+                    <option>Mala atencion</option>
+                    <option>Cobros indebidos</option>
+                    <option>Extrabio de Objetos</option>
+                    <option>Otro</option>
+                   
                   </select>
                 </div>
+                <div class="form-group py-3 ">
+                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
               
               <div class="row p-5">
                 <div class="col-12 d-flex justify-content-end">
