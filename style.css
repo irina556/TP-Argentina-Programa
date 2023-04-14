@@ -16,16 +16,16 @@
 .nav-pagina-principal{
   height: 60px;
 }
-<<<<<<< HEAD
 #resumen {
   display: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 
 #summary {
   border: 1px solid #ccc;
   padding: 10px;
 }
-=======
 
 .red-socialP a{
   display: inline-block;
@@ -42,4 +42,3 @@
 .red-socialP a:hover {
   color: aqua;
 }
->>>>>>> c43945ba95919a6f86c1844b2e3840a6eb4a3ea6
