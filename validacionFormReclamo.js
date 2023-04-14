@@ -1,7 +1,7 @@
 $(document).ready(function(){});
 
 
-$("#formulario-registro").validate(
+$("#formulario-reclamo").validate(
     {
         rules:{
             nombre:{
@@ -52,12 +52,12 @@ $("#formulario-registro").validate(
 
 function subir(event){
     event.preventDefault();
-    if($("#formulario-registro").valid()==false){ //si al presionar el boton en el formulario hay errores, entonces retorna esos errores
+    if($("#formulario-reclamo").valid()==false){ //si al presionar el boton en el formulario hay errores, entonces retorna esos errores
         return;
     }
     else{
         const nextBtn = document.querySelector("#next-btn");
-        const form = document.querySelector("#formulario-registro");
+        const form = document.querySelector("#formulario-reclamo");
         const resumen = document.querySelector("#resumen");
         const summary = document.querySelector("#summary");
 
