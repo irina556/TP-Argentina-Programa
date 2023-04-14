@@ -16,3 +16,11 @@
 .nav-pagina-principal{
   height: 60px;
 }
+#resumen {
+  display: none;
+}
+
+#summary {
+  border: 1px solid #ccc;
+  padding: 10px;
+}

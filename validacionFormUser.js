@@ -85,6 +85,30 @@ function subir(event){
         return;
     }
     else{
+        const nextBtn = document.querySelector("#next-btn");
+        const form = document.querySelector("#formulario-registro");
+        const resumen = document.querySelector("#resumen");
+        const summary = document.querySelector("#summary");
+
+
+        // recopilar datos del primer paso
+        let nombre = document.querySelector("#nombre").value;
+        let apellido=document.querySelector("#apellido").value;
+        let email = document.querySelector("#email").value;
+        let localidad=document.querySelector("#localidad").value;
+        let provincia=document.querySelector("#provincia").value;
+        
+        // mostrar resumen en el segundo paso
+        summary.innerHTML = `Nombre: ${nombre}<br>
+                            Apellido: ${apellido}<br>
+                            Email: ${email}<br>
+                            Localidad: ${localidad}<br>
+                            Provincia: ${provincia}<br>`;
+        
+        // ocultar el primer paso y mostrar el segundo paso
+        form.style.display = "none";
+        resumen.style.display = "block";
+
         Swal.fire({
             icon:"success",
             text:"Los datos se han cargado correctamente"})

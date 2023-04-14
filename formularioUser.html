@@ -13,6 +13,7 @@
         
         <script defer src="./validacionFormUser.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--<script defer src="./formularioDeProceso.js"></script>-->
 
 
     </head>
@@ -109,10 +110,16 @@
               
               <div class="row p-5">
                 <div class="col-12 d-flex justify-content-end">
-                  <button class="btn btn-primary" type="submit">Enviar Solicitud</button>
+                  <button class="btn btn-primary" type="submit" id="next-btn">Enviar Solicitud</button>
                 </div>
               </div>
         </div>
+            </form>
+
+            <form id="resumen">
+              <p>Resumen de datos cargados:</p>
+              <div id="summary"></div>
+            </form>
 
 
         
