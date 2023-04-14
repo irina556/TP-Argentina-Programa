@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.card:hover{
+  transform:scale(105%);
+  border: 1px solid black;
+}
 .nav-pagina-principal{
   height: 60px;
 }
