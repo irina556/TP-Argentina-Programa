@@ -13,12 +13,17 @@
   text-align: center;
 }
 
+.card:hover{
+  transform:scale(105%);
+  border: 1px solid black;
+}
 .nav-pagina-principal{
   height: 60px;
 }
+
 #resumen {
   display: none;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;  
   font-size: 20px;
 }
 
@@ -26,6 +31,7 @@
   border: 1px solid #ccc;
   padding: 10px;
 }
+
 
 .red-socialP a{
   display: inline-block;
