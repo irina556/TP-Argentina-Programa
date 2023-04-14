@@ -16,6 +16,7 @@
 .nav-pagina-principal{
   height: 60px;
 }
+<<<<<<< HEAD
 #resumen {
   display: none;
 }
@@ -24,3 +25,21 @@
   border: 1px solid #ccc;
   padding: 10px;
 }
+=======
+
+.red-socialP a{
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 45px;
+  line-height: 40px;
+  color: #0d2033;
+  background-color: #fff;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.red-socialP a:hover {
+  color: aqua;
+}
+>>>>>>> c43945ba95919a6f86c1844b2e3840a6eb4a3ea6
