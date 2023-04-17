@@ -1,3 +1,4 @@
+$.getScript("jspdf.min.js");
 $(document).ready(function(){});
 
 
@@ -104,6 +105,8 @@ function subir(event){
                             Email: ${email}<br>
                             Localidad: ${localidad}<br>
                             Provincia: ${provincia}<br>`;
+                            genPDF(nombre,apellido,email,localidad,provincia)
+        
         
         // ocultar el primer paso y mostrar el segundo paso
         form.style.display = "none";
@@ -113,4 +116,14 @@ function subir(event){
             icon:"success",
             text:"Los datos se han cargado correctamente"})
     }
+    function genPDF(nombre,apellido,email,localidad,provincia){
+        var doc=new jsPDF();
+        doc.text(20,20,"Nombre: " + nombre);
+        doc.text(20,40,"Apellido: " + apellido);
+        doc.text(20,60,"Email: " + email);
+        doc.text(20,80,"Localidad: " + localidad);
+        doc.text(20,100,"Provincia: "+ provincia);
+        doc.save('FormularioUsuario.pdf');
+    }
+
 }
